@@ -2,7 +2,7 @@
 Aplicação web para cadastro de imóveis disponíveis para locação imobiliaria
 
 # Pré-requisitos
-Certifique-se de ter instalado: [Python](https://www.python.org/downloads/).
+Certifique-se de ter instalado: [Python](https://www.python.org/downloads/), [Node](https://nodejs.org/en/download/package-manager).
 
 Clone o repositório do projeto:
 ```
@@ -18,9 +18,23 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 
+# Configuração inicial do client
+```
+cd client
+npm install
+```
+
 # Rodar o server
 ```
 cd server
 source env/bin/activate
+cd sixthfloor
 python manage.py runserver
+```
+
+# Rodar o client
+```
+cd client
+cd sixthfloor
+npx ng serve
 ```
