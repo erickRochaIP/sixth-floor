@@ -13,7 +13,7 @@ cd sixth-floor
 # Configuração inicial do server
 ```
 cd server
-python -m venv env
+python3 -m venv env
 source env/bin/activate
 pip install -r requirements.txt
 ```
@@ -29,7 +29,7 @@ npm install
 cd server
 source env/bin/activate
 cd sixthfloor
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 # Rodar o client
