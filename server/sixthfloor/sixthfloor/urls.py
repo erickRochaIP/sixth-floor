@@ -17,6 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+from django.http import JsonResponse
+
 urlpatterns = [
+    path('', lambda request: JsonResponse({"data": "hello"})),
     path('admin/', admin.site.urls),
+    path('hello/', lambda request: JsonResponse({"data": "hello"}))
 ]
