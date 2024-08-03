@@ -21,6 +21,7 @@ pip install -r requirements.txt
 # Configuração inicial do client
 ```
 cd client
+cd sixthfloor
 npm install
 ```
 
